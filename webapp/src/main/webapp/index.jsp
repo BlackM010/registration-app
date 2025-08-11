@@ -1,8 +1,18 @@
 <form action="action_page.php">
   <div class="container">
-    <h1>Hey Welkom Terug Mamadou Barriy</h1>
-    <p>Please fill in this form to create an account.</p>
-    <hr>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <div>
+        <h1>Hey Welkom Terug Mamadou Barriy</h1>
+        <p>Please fill in this form to create an account.</p>
+    </div>
+
+    <!-- Theme toggle knop -->
+    <button id="themeToggle" type="button" 
+            style="padding:8px 12px; border-radius:6px; border:1px solid #ccc; cursor:pointer;">
+        🌙 Donker
+    </button>
+</div>
+<hr>
      
     <label for="Name"><b>Enter Name</b></label>
     <input type="text" placeholder="Enter Full Name" name="Name" id="Name" required>
