@@ -191,7 +191,7 @@
   <section class="card" aria-labelledby="formTitle">
     <div class="hero">
       <div>
-        <h1 id="formTitle">Welkom terug, Mamadou Barriy</h1>
+        <h1 id="formTitle">Welkom Bij ORBIS</h1>
         <p>Vul het formulier in om een account aan te maken.</p>
       </div>
     </div>
