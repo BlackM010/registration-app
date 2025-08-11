@@ -40,6 +40,33 @@
   <div class="container signin">
     <p>Already have an account? <a href="#">Sign in</a>.</p>
   </div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleBtn = document.getElementById('themeToggle');
+    const THEME_KEY = 'preferred-theme';
+
+    // Laad het opgeslagen thema of standaard naar 'light'
+    let saved = localStorage.getItem(THEME_KEY) || 'light';
+    document.body.setAttribute('data-theme', saved);
+    updateBtn(saved);
+
+    toggleBtn.addEventListener('click', () => {
+        let current = document.body.getAttribute('data-theme');
+        let next = current === 'dark' ? 'light' : 'dark';
+        document.body.setAttribute('data-theme', next);
+        localStorage.setItem(THEME_KEY, next);
+        updateBtn(next);
+    });
+
+    function updateBtn(mode) {
+        if (mode === 'dark') {
+            toggleBtn.textContent = '🌞 Licht';
+        } else {
+            toggleBtn.textContent = '🌙 Donker';
+        }
+    }
+});
+</script>
 
    <h1> Dankjewel en succes verder </h1>
    <h1> Tot ziens </h1>
